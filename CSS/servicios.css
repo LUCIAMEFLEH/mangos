@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+h2{
+    color: #f732b8;
+}
+
+header {
+    background-color: rgb(244, 171, 235);
+    color: #000000; 
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(235, 233, 233, 0.986);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#superior {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-left: 30px; 
+    align-items: center; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+}
+
+#icono1 {
+    max-width: 80px;
+    border-radius: 70%;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: transparent; 
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+    list-style: none;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    transform: scale(1.1);
+    border-radius: 1px;
+    color: black;
+}
+
+.navbar ul li a.active {
+    background-color: #f664ea;
+    border-radius: 4px;
+}
+
+.dropbtn {
+    background-color: rgba(203, 32, 166, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none; 
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+    z-index: 2; 
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(234, 134, 181);
+    min-width: 160px;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover{background-color:#ebebeb;}
+
+.dropup:hover .dropup-content {
+    display: block; 
+}
+
+.dropup:hover .dropbtn {
+    background-color: #f7f9f9;
+    color:#000000
+}
+
+@media screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        text-align: left;
+        padding: 10px; 
+    }
+
+    .submenu { 
+        position: static;
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+.titulo { 
+    text-align: center;
+    margin-bottom: ;
+}
